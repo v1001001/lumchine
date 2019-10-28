@@ -37,15 +37,15 @@ public class SmsTest {
 
     @Test
     public void testCaptcha() {
-        String phone = "xxxxxxxxxxx";
+        String phone = "15618292182";
         String[] params = new String[]{"123456"};
 
-        notifyService.notifySmsTemplate(phone, NotifyType.CAPTCHA, params);
+        notifyService.notifySms(phone, "[蓝美奇]恭喜你注册成功，验证码为:"+ params);
     }
 
     @Test
     public void testPaySucceed() {
-        String phone = "xxxxxxxxxxx";
+        String phone = "15618292182";
         String[] params = new String[]{"123456"};
 
         notifyService.notifySmsTemplate(phone, NotifyType.PAY_SUCCEED, params);
